@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+
+
+    <style>
+            body {
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+            }
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+    <script>
+// AINDA NÃO FUNCIONA, POIS O PROMPT APARECE ANTES DOS NOMES DOS DOCUMENTS
+
+
+
+// saber números
+        document.write(`    <h1>MINHA PRIMEIRA CALCULADORA!</h1><br/>
+`)
+        var num1 = Number.parseFloat(window.prompt('Qual número 01?'))
+        document.write(`número 01 = "${num1}" <br>`)
+
+        var num2 = Number.parseFloat(window.prompt('Qual número 02?'))
+        document.write(`número 02 = "${num2}" <br><br><br>`)
+
+//saber operação
+
+        document.write('O que desejafazer?<br>1 = adição;<br>2 = subtração;<br>3 = multiplicação;<br>4 = divisão<br><br><br>')
+            var operacao = window.prompt()
+//calcular
+            if(operacao == 1) {
+                document.write('ADIÇÃO<br>') 
+                var resultado = num1 + num2
+                document.write('resultado da adição é: ' + resultado)
+
+            }   else if (operacao == 2) {
+                document.write('SUBTRAÇÃO<br>')
+                var resultado = num1 - num2
+                document.write('resultado da adição é: ' + resultado)
+
+            }   else if (operacao == 3) {
+                document.write('MULTIPLICAÇÃO<br>')
+                var resultado = num1 * num2
+                document.write('resultado da adição é: ' + resultado)
+
+            } else if (operacao == 4) {
+                document.write('DIVISÃO<br>')
+                var resultado = num1 / num2
+                document.write('resultado da adição é: ' + resultado)
+
+            } else if (operacao != 1 || 2 || 3 || 4) {
+                document.write('ERRO!!!<br>')
+            }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

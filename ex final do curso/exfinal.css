@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    line-height: 15pt;
+}
+
+header{
+text-align: center;
+color: white;
+}
+
+section{
+border-radius: 10pt;
+padding: 20pt;
+width: 300pt;
+margin: auto;
+background-color: white;
+color: black;
+}
+
+select{
+    width: 150pt;
+}
+
+
+
+footer{
+    text-align: center;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+

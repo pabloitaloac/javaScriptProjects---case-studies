@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        body{
+            color: aliceblue;
+            background-color: black;
+            text-align: center;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <h1> Testando plugin</h1>
+
+    <p>
+        paragrafo 01 texto aleatório
+    </p>
+    <p> 
+        parágrafo2
+    </p>
+
+    <div id="testeMarcacao1">
+        div 01
+    </div>
+
+    <DIV class="usandoQS">
+        DIV 02 
+    </DIV>
+
+
+
+
+    <script>
+       var paragrafo1 = window.document.getElementsByTagName('p')[0]
+       window.document.write('Reutilizando texto da <strong>VARIÁVEL PARÁGRAFO: </strong>' + paragrafo1.innerText)
+        paragrafo1.style.color = 'red'
+
+        var marcado = window.document.getElementById('testeMarcacao1')
+        window.document.write('Reutilizando texto da <strong>DIV MARCADA: </strong>' + marcado.innerText)
+
+        var usandoQuerySelector = window.document.querySelector('div.usandoQS') //selecionando e utilizando/mudando informações de elemento marcado, através de QuerySelector (mais recomendado)
+        usandoQuerySelector.style.background = 'green'
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+
+
+    <style>
+            body {
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+            }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>MINHA PRIMEIRA CALCULADORA!</h1><br/>
+    :)
+
+    <script>
+        // (//)só funciona aqui, pq aqui é JS (programação)
+
+        var num1 = Number.parseFloat(window.prompt('Qual número 01?'))
+        window.alert(`Você digitou: ${num1} !`) // PODE SER:  window.alert('Você digitou: ' + num1 + '!')
+
+
+        var num2 = Number.parseFloat(window.prompt('Qual número 02?'))
+        window.alert('Você digitou: ' + num2 + '!')
+
+        // + serve tanto para adição, quanto para concatenação. 
+        // O prompt só retorna string, então é preciso converter para number
+
+        var operacao = window.prompt('O que desejafazer? 1 = adição; 2 = subtração; 3 = multiplicação; 4 = divisão')
+            if(operacao == 1) {
+                window.alert('ADIÇÃO') 
+                var resultado = num1 + num2
+                window.alert('resultado da adição é: ' + resultado)
+
+            }   else if (operacao == 2) {
+                window.alert('SUBTRAÇÃO')
+                var resultado = num1 - num2
+                window.alert('resultado da adição é: ' + resultado)
+
+            }   else if (operacao == 3) {
+                window.alert('MULTIPLICAÇÃO')
+                var resultado = num1 * num2
+                window.alert('resultado da adição é: ' + resultado)
+
+            } else if (operacao == 4) {
+                window.alert('DIVISÃO')
+                var resultado = num1 / num2
+                window.alert('resultado da adição é: ' + resultado)
+
+            } else if (operacao != 1 || 2 || 3 || 4) {
+                window.alert('ERRO!!!')
+            }
+
+        
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

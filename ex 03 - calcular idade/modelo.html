@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="cssModelo.css">
+</head>
+<body>
+
+
+    <header>
+        VERIFICADOR DE IDADE
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Ano de nascimento
+                <input type="number" name="nascimento" id="nascimento">
+            </p>
+            <p>
+                <input type="radio" name="masculino" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="feminino" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+        </div>
+        <div>
+            <input type="button" value="verificar" onclick="calc()">
+            <p id="txtpalterar">
+                Clique em 'verificar', para calcular.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        &copy;pabloitaloac && TeKnow Soluções
+        
+    </footer>
+
+    <script src="jsModelo.js"></script>
+
+
+</body>
+</html>
